@@ -121,4 +121,44 @@
     <wire from="(210,210)" to="(250,210)"/>
     <wire from="(310,190)" to="(360,190)"/>
   </circuit>
+  <circuit name="my_and">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="my_and"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(160,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(160,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(420,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MyOut"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(280,120)" name="NAND Gate"/>
+    <comp lib="1" loc="(280,210)" name="NAND Gate"/>
+    <comp lib="1" loc="(380,170)" name="NAND Gate"/>
+    <wire from="(160,110)" to="(180,110)"/>
+    <wire from="(160,210)" to="(190,210)"/>
+    <wire from="(180,100)" to="(180,110)"/>
+    <wire from="(180,100)" to="(220,100)"/>
+    <wire from="(180,110)" to="(180,190)"/>
+    <wire from="(180,190)" to="(220,190)"/>
+    <wire from="(190,140)" to="(190,210)"/>
+    <wire from="(190,140)" to="(220,140)"/>
+    <wire from="(190,210)" to="(190,230)"/>
+    <wire from="(190,230)" to="(220,230)"/>
+    <wire from="(280,120)" to="(300,120)"/>
+    <wire from="(280,210)" to="(300,210)"/>
+    <wire from="(300,120)" to="(300,150)"/>
+    <wire from="(300,150)" to="(320,150)"/>
+    <wire from="(300,190)" to="(300,210)"/>
+    <wire from="(300,190)" to="(320,190)"/>
+    <wire from="(380,170)" to="(420,170)"/>
+  </circuit>
 </project>
