@@ -98,4 +98,27 @@
     <wire from="(360,180)" to="(400,180)"/>
     <wire from="(460,160)" to="(600,160)"/>
   </circuit>
+  <circuit name="my_not">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="my_not"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(180,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="myin"/>
+    </comp>
+    <comp lib="0" loc="(360,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="myout"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(310,190)" name="NAND Gate"/>
+    <wire from="(180,190)" to="(210,190)"/>
+    <wire from="(210,170)" to="(210,190)"/>
+    <wire from="(210,170)" to="(250,170)"/>
+    <wire from="(210,190)" to="(210,210)"/>
+    <wire from="(210,210)" to="(250,210)"/>
+    <wire from="(310,190)" to="(360,190)"/>
+  </circuit>
 </project>

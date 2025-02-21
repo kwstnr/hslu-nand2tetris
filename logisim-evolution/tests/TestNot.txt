@@ -1,0 +1,5 @@
+# Test Not
+
+myin myout
+0 1
+1 0
