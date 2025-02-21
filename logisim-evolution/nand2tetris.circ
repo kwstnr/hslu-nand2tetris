@@ -161,4 +161,49 @@
     <wire from="(300,190)" to="(320,190)"/>
     <wire from="(380,170)" to="(420,170)"/>
   </circuit>
+  <circuit name="my_XOR">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="my_XOR"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(150,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(150,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(460,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MyOut"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(230,120)" name="NOT Gate"/>
+    <comp lib="1" loc="(230,220)" name="NOT Gate"/>
+    <comp lib="1" loc="(320,140)" name="AND Gate"/>
+    <comp lib="1" loc="(320,200)" name="AND Gate"/>
+    <comp lib="1" loc="(410,170)" name="OR Gate"/>
+    <wire from="(150,100)" to="(170,100)"/>
+    <wire from="(150,250)" to="(160,250)"/>
+    <wire from="(160,160)" to="(160,220)"/>
+    <wire from="(160,160)" to="(270,160)"/>
+    <wire from="(160,220)" to="(160,250)"/>
+    <wire from="(160,220)" to="(200,220)"/>
+    <wire from="(170,100)" to="(170,120)"/>
+    <wire from="(170,120)" to="(170,180)"/>
+    <wire from="(170,120)" to="(200,120)"/>
+    <wire from="(170,180)" to="(270,180)"/>
+    <wire from="(230,120)" to="(270,120)"/>
+    <wire from="(230,220)" to="(270,220)"/>
+    <wire from="(270,180)" to="(270,190)"/>
+    <wire from="(320,140)" to="(340,140)"/>
+    <wire from="(320,200)" to="(340,200)"/>
+    <wire from="(340,140)" to="(340,150)"/>
+    <wire from="(340,150)" to="(360,150)"/>
+    <wire from="(340,190)" to="(340,200)"/>
+    <wire from="(340,190)" to="(360,190)"/>
+    <wire from="(410,170)" to="(460,170)"/>
+  </circuit>
 </project>
