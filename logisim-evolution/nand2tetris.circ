@@ -466,4 +466,55 @@
     <wire from="(530,370)" to="(660,370)"/>
     <wire from="(560,150)" to="(660,150)"/>
   </circuit>
+  <circuit name="my_FA2">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="my_FA2"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1160,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sum"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="carry"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(140,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="c"/>
+    </comp>
+    <comp lib="0" loc="(140,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="1" loc="(1010,300)" name="OR Gate"/>
+    <comp loc="(480,160)" name="my_HA"/>
+    <comp loc="(800,230)" name="my_HA"/>
+    <wire from="(1010,300)" to="(1160,300)"/>
+    <wire from="(140,180)" to="(260,180)"/>
+    <wire from="(140,250)" to="(580,250)"/>
+    <wire from="(140,90)" to="(220,90)"/>
+    <wire from="(220,110)" to="(250,110)"/>
+    <wire from="(220,90)" to="(220,110)"/>
+    <wire from="(250,110)" to="(250,160)"/>
+    <wire from="(250,160)" to="(260,160)"/>
+    <wire from="(480,160)" to="(530,160)"/>
+    <wire from="(480,180)" to="(520,180)"/>
+    <wire from="(520,180)" to="(520,320)"/>
+    <wire from="(520,320)" to="(960,320)"/>
+    <wire from="(530,160)" to="(530,230)"/>
+    <wire from="(530,230)" to="(580,230)"/>
+    <wire from="(800,230)" to="(1160,230)"/>
+    <wire from="(800,250)" to="(900,250)"/>
+    <wire from="(900,250)" to="(900,280)"/>
+    <wire from="(900,280)" to="(960,280)"/>
+  </circuit>
 </project>
