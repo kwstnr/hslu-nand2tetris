@@ -55,7 +55,6 @@
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="16"/>
     </tool>
     <sep/>
     <tool lib="1" name="NOT Gate"/>
@@ -1956,5 +1955,48 @@
     <wire from="(910,3600)" to="(1150,3600)"/>
     <wire from="(910,3650)" to="(1140,3650)"/>
     <wire from="(910,3700)" to="(1130,3700)"/>
+  </circuit>
+  <circuit name="my_Bit">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="my_Bit"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(110,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="my_in"/>
+    </comp>
+    <comp lib="0" loc="(130,340)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(190,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="load"/>
+    </comp>
+    <comp lib="0" loc="(520,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="my_out"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(260,150)" name="AND Gate"/>
+    <comp lib="1" loc="(260,240)" name="AND Gate"/>
+    <comp lib="4" loc="(360,140)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <wire from="(110,170)" to="(210,170)"/>
+    <wire from="(130,260)" to="(130,340)"/>
+    <wire from="(130,260)" to="(210,260)"/>
+    <wire from="(190,130)" to="(190,220)"/>
+    <wire from="(190,130)" to="(210,130)"/>
+    <wire from="(190,220)" to="(210,220)"/>
+    <wire from="(190,70)" to="(190,130)"/>
+    <wire from="(260,150)" to="(350,150)"/>
+    <wire from="(260,240)" to="(320,240)"/>
+    <wire from="(320,190)" to="(320,240)"/>
+    <wire from="(320,190)" to="(350,190)"/>
+    <wire from="(350,190)" to="(360,190)"/>
+    <wire from="(410,150)" to="(520,150)"/>
   </circuit>
 </project>
